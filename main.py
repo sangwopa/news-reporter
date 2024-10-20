@@ -1,24 +1,11 @@
-import os
-import logging
-import argparse
+from fastapi import FastAPI
 
-def arg_parser():
-    # 파서 설정
-    parser = argparse.ArgumentParser(description="Argument Setting")
-    parser.add_argument("--debug", action="store_true", help="activate debugging mode")
-    args = parser.parse_args()
-    
-    return args
-    
+app = FastAPI()
 
-
-
-def main():
-    print(1)
-    
-
-
-
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
 
 if __name__ == "__main__":
-    main()
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
