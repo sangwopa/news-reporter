@@ -1,0 +1,20 @@
+[2024-10-28 21:41:02 +0900] [1025] [INFO] Starting gunicorn 23.0.0
+[2024-10-28 21:41:02 +0900] [1025] [INFO] Listening at: unix:/tmp/gunicorn.sock (1025)
+[2024-10-28 21:41:02 +0900] [1025] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-10-28 21:41:02 +0900] [1143] [INFO] Booting worker with pid: 1143
+[2024-10-28 21:41:02 +0900] [1145] [INFO] Booting worker with pid: 1145
+[2024-10-28 21:41:02 +0900] [1161] [INFO] Booting worker with pid: 1161
+[2024-10-28 21:41:02 +0900] [1162] [INFO] Booting worker with pid: 1162
+[2024-10-28 21:41:02 +0900] [1143] [INFO] Started server process [1143]
+[2024-10-28 21:41:02 +0900] [1145] [INFO] Started server process [1145]
+[2024-10-28 21:41:02 +0900] [1143] [INFO] Waiting for application startup.
+[2024-10-28 21:41:02 +0900] [1145] [INFO] Waiting for application startup.
+[2024-10-28 21:41:02 +0900] [1143] [INFO] Application startup complete.
+[2024-10-28 21:41:02 +0900] [1145] [INFO] Application startup complete.
+[2024-10-28 21:41:02 +0900] [1161] [INFO] Started server process [1161]
+[2024-10-28 21:41:02 +0900] [1161] [INFO] Waiting for application startup.
+[2024-10-28 21:41:02 +0900] [1161] [INFO] Application startup complete.
+[2024-10-28 21:41:03 +0900] [1162] [INFO] Started server process [1162]
+[2024-10-28 21:41:03 +0900] [1162] [INFO] Waiting for application startup.
+[2024-10-28 21:41:03 +0900] [1162] [INFO] Application startup complete.
+plication startup complete.
