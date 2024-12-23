@@ -1,20 +1,161 @@
-[2024-10-28 21:41:02 +0900] [1025] [INFO] Starting gunicorn 23.0.0
-[2024-10-28 21:41:02 +0900] [1025] [INFO] Listening at: unix:/tmp/gunicorn.sock (1025)
-[2024-10-28 21:41:02 +0900] [1025] [INFO] Using worker: uvicorn.workers.UvicornWorker
-[2024-10-28 21:41:02 +0900] [1143] [INFO] Booting worker with pid: 1143
-[2024-10-28 21:41:02 +0900] [1145] [INFO] Booting worker with pid: 1145
-[2024-10-28 21:41:02 +0900] [1161] [INFO] Booting worker with pid: 1161
-[2024-10-28 21:41:02 +0900] [1162] [INFO] Booting worker with pid: 1162
-[2024-10-28 21:41:02 +0900] [1143] [INFO] Started server process [1143]
-[2024-10-28 21:41:02 +0900] [1145] [INFO] Started server process [1145]
-[2024-10-28 21:41:02 +0900] [1143] [INFO] Waiting for application startup.
-[2024-10-28 21:41:02 +0900] [1145] [INFO] Waiting for application startup.
-[2024-10-28 21:41:02 +0900] [1143] [INFO] Application startup complete.
-[2024-10-28 21:41:02 +0900] [1145] [INFO] Application startup complete.
-[2024-10-28 21:41:02 +0900] [1161] [INFO] Started server process [1161]
-[2024-10-28 21:41:02 +0900] [1161] [INFO] Waiting for application startup.
-[2024-10-28 21:41:02 +0900] [1161] [INFO] Application startup complete.
-[2024-10-28 21:41:03 +0900] [1162] [INFO] Started server process [1162]
-[2024-10-28 21:41:03 +0900] [1162] [INFO] Waiting for application startup.
-[2024-10-28 21:41:03 +0900] [1162] [INFO] Application startup complete.
-plication startup complete.
+[2024-12-23 19:31:21 +0900] [852] [INFO] Starting gunicorn 23.0.0
+[2024-12-23 19:31:21 +0900] [852] [INFO] Listening at: unix:/tmp/gunicorn.sock (852)
+[2024-12-23 19:31:21 +0900] [852] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2024-12-23 19:31:21 +0900] [934] [INFO] Booting worker with pid: 934
+[2024-12-23 19:31:22 +0900] [952] [INFO] Booting worker with pid: 952
+[2024-12-23 19:31:22 +0900] [953] [INFO] Booting worker with pid: 953
+[2024-12-23 19:31:22 +0900] [954] [INFO] Booting worker with pid: 954
+[2024-12-23 19:31:22 +0900] [954] [INFO] Started server process [954]
+[2024-12-23 19:31:22 +0900] [952] [INFO] Started server process [952]
+[2024-12-23 19:31:22 +0900] [934] [INFO] Started server process [934]
+[2024-12-23 19:31:22 +0900] [953] [INFO] Started server process [953]
+[2024-12-23 19:31:22 +0900] [954] [INFO] Waiting for application startup.
+[2024-12-23 19:31:22 +0900] [952] [INFO] Waiting for application startup.
+[2024-12-23 19:31:22 +0900] [934] [INFO] Waiting for application startup.
+[2024-12-23 19:31:22 +0900] [953] [INFO] Waiting for application startup.
+[2024-12-23 19:31:22 +0900] [952] [INFO] Application startup complete.
+[2024-12-23 19:31:22 +0900] [954] [INFO] Application startup complete.
+[2024-12-23 19:31:22 +0900] [934] [INFO] Application startup complete.
+[2024-12-23 19:31:22 +0900] [953] [INFO] Application startup complete.
+:26 +0900] [26040] [INFO] Application startup complete.
+[2024-12-10 00:22:42 +0900] [26039] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 406, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/User/Documents/GitHub/news-reporter/src/main.py", line 29, in chat_with_claude
+    response = rag_chain.invoke({
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3024, in invoke
+    input = context.run(step.invoke, input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 286, in invoke
+    self.generate_prompt(
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 786, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 643, in generate
+    raise e
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 633, in generate
+    self._generate_with_cache(
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 851, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_anthropic/chat_models.py", line 796, in _generate
+    data = self._client.messages.create(**payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_utils/_utils.py", line 275, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/resources/messages.py", line 888, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_base_client.py", line 1279, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_base_client.py", line 956, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_base_client.py", line 1060, in _request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+b/python3.11/site-packages/langchain_core/runnables/base.py", line 2303, in _atransform_stream_with_config
+    |     chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/tracers/log_stream.py", line 254, in tap_output_aiter
+    |     async for chunk in output:
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3385, in _atransform
+    |     async for output in final_pipeline:
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/output_parsers/transform.py", line 84, in atransform
+    |     async for chunk in self._atransform_stream_with_config(
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 2261, in _atransform_stream_with_config
+    |     final_input: Optional[Input] = await py_anext(input_for_tracing, None)
+    |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/utils/aiter.py", line 76, in anext_impl
+    |     return await __anext__(iterator)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/utils/aiter.py", line 125, in tee_peer
+    |     item = await iterator.__anext__()
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 1473, in atransform
+    |     async for output in self.astream(final, config, **kwargs):
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 494, in astream
+    |     raise e
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 472, in astream
+    |     async for chunk in self._astream(
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/langchain_anthropic/chat_models.py", line 747, in _astream
+    |     stream = await self._async_client.messages.create(**payload)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/resources/messages.py", line 1817, in create
+    |     return await self._post(
+    |            ^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_base_client.py", line 1842, in post
+    |     return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_base_client.py", line 1536, in request
+    |     return await self._request(
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/swpar/.conda/envs/daily-news/lib/python3.11/site-packages/anthropic/_base_client.py", line 1637, in _request
+    |     raise self._make_status_error_from_response(err.response) from None
+    | anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+    +------------------------------------
+[2024-12-10 00:05:25 +0900] [20233] [INFO] Handling signal: term
+[2024-12-10 00:05:25 +0900] [20241] [INFO] Shutting down
+[2024-12-10 00:05:25 +0900] [20237] [INFO] Shutting down
+[2024-12-10 00:05:25 +0900] [20240] [INFO] Shutting down
+[2024-12-10 00:05:25 +0900] [20242] [INFO] Shutting down
+[2024-12-10 00:05:25 +0900] [20241] [INFO] Waiting for application shutdown.
+[2024-12-10 00:05:25 +0900] [20237] [INFO] Waiting for application shutdown.
+[2024-12-10 00:05:25 +0900] [20240] [INFO] Waiting for application shutdown.
+[2024-12-10 00:05:25 +0900] [20241] [INFO] Application shutdown complete.
+[2024-12-10 00:05:25 +0900] [20237] [INFO] Application shutdown complete.
+[2024-12-10 00:05:25 +0900] [20242] [INFO] Waiting for application shutdown.
+[2024-12-10 00:05:25 +0900] [20240] [INFO] Application shutdown complete.
+[2024-12-10 00:05:25 +0900] [20241] [INFO] Finished server process [20241]
+[2024-12-10 00:05:25 +0900] [20237] [INFO] Finished server process [20237]
+[2024-12-10 00:05:25 +0900] [20242] [INFO] Application shutdown complete.
+[2024-12-10 00:05:25 +0900] [20242] [INFO] Finished server process [20242]
+[2024-12-10 00:05:25 +0900] [20240] [INFO] Finished server process [20240]
+[2024-12-10 00:05:25 +0900] [20233] [ERROR] Worker (pid:20241) was sent SIGTERM!
+[2024-12-10 00:05:25 +0900] [20233] [ERROR] Worker (pid:20237) was sent SIGTERM!
+[2024-12-10 00:05:25 +0900] [20233] [ERROR] Worker (pid:20240) was sent SIGTERM!
+[2024-12-10 00:05:25 +0900] [20233] [ERROR] Worker (pid:20242) was sent SIGTERM!
+[2024-12-10 00:05:25 +0900] [20233] [INFO] Shutting down: Master
